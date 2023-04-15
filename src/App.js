@@ -6,7 +6,7 @@ export default function App(){
 
 const [text,setText] = useState('')
     return (
-       <TextContext.Provider value={text}>
+       <TextContext.Provider>
         <div>
             This is default boilerplate app
             <textarea onChange={e => setText(e.target.value)}></textarea>
